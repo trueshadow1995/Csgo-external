@@ -13,16 +13,16 @@ void Style() {
   auto& style = ImGui::GetStyle();
   io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\Bahnschrift.ttf", 16.0f);
   style.Alpha = 1.0f;
-  style.WindowPadding = ImVec2(15, 15);
+  style.WindowPadding = ImVec2(15, 15); //inner padding
   style.WindowRounding = 10.f;
   style.WindowBorderSize = 1.0f;
   style.WindowMinSize = ImVec2(32, 32);
   style.WindowTitleAlign = ImVec2(0.5f, 0.5f);
   style.ChildRounding = 10.f;
-  style.ChildBorderSize = 1.0f;
+  style.ChildBorderSize = 1.0f; //inner border kinda acts like padding wtf ? lol
   style.PopupRounding = 10.f;
   style.PopupBorderSize = 1.0f;
-  style.FramePadding = ImVec2(1, 1);
+  style.FramePadding = ImVec2(0, 0);
   style.FrameRounding = 10.f;
   style.FrameBorderSize = 1.0f;
   style.ItemSpacing = ImVec2(8, 4);
@@ -45,9 +45,9 @@ void Style() {
   style.Colors[ImGuiCol_TextSelectedBg] =
       ImColor(20, 148, 20, 150);  // accent 1
 
-  style.Colors[ImGuiCol_WindowBg] = ImColor(9, 17, 27, 0);  // primtv 3
+  style.Colors[ImGuiCol_WindowBg] = ImColor(0, 0, 00, 0);  // primtv 3
   style.Colors[ImGuiCol_ChildBg] =
-      ImColor(0.031f, 0.066f, 0.10f, 0.35f);                  // primtv 1
+      ImColor(0.0f, 0.0f, 0.0f);                  // primtv 1
   style.Colors[ImGuiCol_PopupBg] = ImColor(30, 30, 30, 255);  // primtv 1
 
   style.Colors[ImGuiCol_Border] =

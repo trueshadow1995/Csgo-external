@@ -143,9 +143,6 @@
     <ClCompile Include="font_awesome.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Release\Esp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />

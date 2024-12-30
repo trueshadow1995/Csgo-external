@@ -175,7 +175,6 @@
     <ClCompile Include="Imgui\imgui_widgets.cpp" />
     <ClCompile Include="norecoil.cpp" />
     <ClCompile Include="overlay.cpp" />
-    <ClCompile Include="Release\Esp.cpp" />
     <ClCompile Include="skinchanger.cpp" />
     <ClCompile Include="triggerbot.cpp" />
   </ItemGroup>

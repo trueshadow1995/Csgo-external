@@ -4,9 +4,9 @@
 #include <cstdint>
 #include <string>
 
-#include "imgui/imgui.h"
 #include "cstddef"
 #include "cstdint"
+#include "imgui/imgui.h"
 
 namespace globals {
 inline std::uintptr_t clientAddress = 0;
@@ -28,10 +28,13 @@ inline bool fovchanger = false;
 inline bool NoRecoil = false;
 inline float FovColor[3]{0.f, 0.f, 1.f};
 inline bool Smoothing = false;
-inline bool chams = false;
+inline bool Chams = false;
+inline bool Rainbowchams = false;
+
 inline float chamsbrightness = 25.f;
 inline float EnemyChamColor[]{1.f, 0.f, 0.f, 4.f};
 inline float TeamChamColor[]{0.f, 1.f, 0.f, 4.f};
+
 inline bool skinchanger = false;
 inline bool AimbotSmoothing = false;
 inline float Aimbotsmoothing = 5.f;
@@ -46,7 +49,6 @@ inline float SnapLineColor[3] = {0.f, 1.f, 0.f};
 inline float EspBoxColor[3] = {0.f, 1.f, 0.f};
 inline bool PlayerEspBackGround = false;
 inline bool FpsCounter = false;
-
 
 }  // namespace globals
 
@@ -88,8 +90,3 @@ constexpr auto m_flFallbackWear = 0x31E0;
 constexpr auto m_flFlashDuration = 0x10470;
 constexpr auto RadarBase = 0x523BCB4;
 }  // namespace offsets
-
-  
-
-
-
